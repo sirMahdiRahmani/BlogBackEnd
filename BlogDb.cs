@@ -12,6 +12,7 @@ public class BlogDb : DbContext
     public DbSet<Comment> Comments { get; set; }
     public DbSet<Tag> Tags { get; set; }
     public DbSet<Image> Images { get; set; }
+    public DbSet<PostTag> PostTags { get; set; }
     
     public BlogDb(DbContextOptions<BlogDb> options)
         : base(options) { }
